@@ -13,7 +13,7 @@ export class RouteService {
     }
 
     async calculateDistance(centerAddress: string, packageAddress: string): Promise<number> {
-        const apiKey = 'AIzaSyBFsTW0Z6atmDnBTAC4XRPHeO_wYiW2Hws';
+        const apiKey = '';
         const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${encodeURIComponent(centerAddress)}&destinations=${encodeURIComponent(packageAddress)}&key=${apiKey}`;
 
         try {
